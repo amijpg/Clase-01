@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8"/>
+    <style>
+      html,body{
+        margin:0;
+        padding: 0;
+        cursor:crosshair,
+      }
+      canvas{
+        display: block;
+      }
+      h1{
+        position: absolute;
+        top: 1rem;
+        left: 3rem;
+        z-index: 2;
+      }
+
+      p{
+        position: absolute;
+        width: 50vw;
+        top:4rem;
+        left: 3rem;
+        z-index: 2;
+      }
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1> Hola!</h1>
+      <p>Soy Eymi, y estudio Diseño Gráfico en duoc uc. Gracias a una gran oportunidad puedo estar ahora tomanado un curso en esta univrsidad.</p>
+    </main>
+
+    <script>
+      
+     function setup() {
+      createCanvas(WindowWith, windowHeight);
+      noStroke();
+      background(79,200,225);
+      }
+      function draw() {
+      line(pmouseX,pmouseY, mouseX, mouseY);
+      text(a,160,200);
+      } 
+
+      </script>
+  </body>
+</html>
